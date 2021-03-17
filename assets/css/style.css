@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(1, 1, 71);
+  background-image: 
+    linear-gradient(to bottom, rgb(1,1,71), black),
+    url ('images/wcbackground.jpg');
+  color: rgb(153, 153, 153);
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  
+}
+
+header {
+  display: flex;
+  align-content: flex-start;
+}
+
+.contact{
+  display:flex;
+  flex-direction: column;
+}
+
+h1{
+ 
+}
+
+/* portriat image settings */
+.portrait {
+  height: 200px;
+  width: 200px;
+}
