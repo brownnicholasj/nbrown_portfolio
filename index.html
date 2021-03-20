@@ -2,6 +2,7 @@
 
     <head>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>Nicholas Brown Portfolio</title>
     </head>
@@ -15,43 +16,75 @@
             
             <div class="contact">
                 <h1>Nicholas Brown</h1>
-                <div class="contact-labels">
-                    <label class="label">Email:</label> <a href="mailto:brown.nicholasj@gmail.com">brown.nicholasj@gmail.com</a>
-                    <label class="label">LinkedIn:</label> <a href="www.linkedin.com/in/nibrown/" target="_blank">linkedin.com/in/nibrown</a>
-                    <label class="label">GitHub:</label> <a href="github.com/brownnicholasj" target="_blank">github.com/brownnicholasj</a>
-                </div>
+                <section class="contact-section">
+                    <div class="contact-label">
+                        <span class="label">Email:</span><a href="mailto:brown.nicholasj@gmail.com">brown.nicholasj@gmail.com</a>
+                    </div>
+                    <div class="contact-label">
+                        <span class="label">LinkedIn:</span><a href="www.linkedin.com/in/nibrown/" target="_blank">linkedin.com/in/nibrown</a>
+                    </div>
+                    <div class="contact-label">
+                        <span class="label">GitHub:</span><a href="github.com/brownnicholasj" target="_blank">github.com/brownnicholasj</a>
+                    </div>
+                </section>
             </div>     
         </header>
 
         <nav>
-            <a href="#application-1">application 1</a>
-            <a href="#application-2">application 2</a>
-            <a href="#application-3">application 3</a>
-            <a href="#application-4">application 4</a>
-            <a href="#application-5">application 5</a>
+            <section class="toprow">
+                <div class="navbutton">
+                    <a href="$aboutme">About Me</a>
+                </div>
+            </section>
+            <section class="bottomrow">
+                <div class="navbutton">
+                    <a href="#application-1">application 1</a>
+                </div>
+                <div class="navbutton">
+                    <a href="#application-2">application 2</a>
+                </div>
+                <div class="navbutton">
+                    <a href="#application-3">application 3</a>
+                </div>
+                <div class="navbutton">
+                    <a href="#application-4">application 4</a>
+                </div>   
+                <div class="navbutton">
+                    <a href="#application-5">application 5</a>
+                </div>
+            </section>    
         </nav>
 
         <main>
-            <section id="application-1">
-                <header>Application 1</header>
-                <img id="app1" src="./assets/images/placeholder.png" alt="placeholder image"/>
-            </section>
-            <section id="application-2">
-                <header>Application 2</header>
-                <img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/>
-            </section>
-            <section id="application-3">
-                <header>Application 3</header>
-                <img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/>
-            </section>
-            <section id="application-4">
-                <header>Application 4</header>
-                <img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/>
-            </section>
-            <section id="application-5">
-                <header>Application 5</header>
-                <img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/>
-            </section>
+            <div class="topmain">
+                <section id="aboutme">
+                    <header>About Me</header>
+
+                </section>
+            </div>
+
+            <div class="apps">
+                <section id="application-1">
+                    <header>Application 1</header>
+                    <img id="app1" src="./assets/images/placeholder.png" alt="placeholder image"/>
+                </section>
+                <section id="application-2">
+                    <header>Application 2</header>
+                    <img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/>
+                </section>
+                <section id="application-3">
+                    <header>Application 3</header>
+                    <img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/>
+                </section>
+                <section id="application-4">
+                    <header>Application 4</header>
+                    <img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/>
+                </section>
+                <section id="application-5">
+                    <header>Application 5</header>
+                    <img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/>
+                </section>
+            </div>
         </main>
 
     </body>
