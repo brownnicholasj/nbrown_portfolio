@@ -3,45 +3,41 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom,black,rgb(1, 1, 71));
-  /* background-image: 
-  url("https://brownnicholasj.github.io/nbrown_portfolio/assets/images/wcbackground.jpg"); */
+  background-image: linear-gradient(to right,black,rgb(71, 1, 1),black);
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: rgb(153, 153, 153);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'American Typewriter', serif;
+  text-shadow: 2px 2px rgb(0,0,0, 0.5);
   margin: 10px;
   height: 100%;
 }
 
-/* START HEADER SECTION */
-
-header {
-  display:flex;
-  justify-content: flex-start;
-  font-size: 26px;
-  text-align:left;
-  margin: 0%;
-  padding: 0%;
-
+/* NAV START */
+/* sticky nav found via google */
+nav {
+  display: grid;
+  grid-template-columns: 300px repeat(3,auto);
+  grid-template-rows: 50px 100px 100px 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(to right,black,rgb(71, 1, 1),black);
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  border-bottom-color: rgb(0,0,0, 0.2);
 }
-
 /* portriat image settings */
-header img {
-  height: 300px;
-    max-height: 300px;
-  width: 25%;
-    max-width: 300px;
-  object-fit: contain;
-}
-.contact{
-  display:flex;
-  flex-wrap: wrap;
-  align-self: center;
-  width: 75%;
+nav img {
+  max-height: 300px;
+  max-width: 300px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
-h1{
+nav h1{
+  grid-column: 2/5;
+  grid-row: 2/3;
   font-weight: bold;
   font-size: 8vw;
   padding: 0%;
@@ -52,6 +48,76 @@ h1{
   width: 100%;
   text-align: center;
 }
+
+nav > div{
+  border: 2px solid black;
+  box-shadow: 2px 4px black;
+  background-image: linear-gradient(to bottom,black,rgb(71, 1, 1));
+  padding: 1%;
+  margin: auto;
+  width: 200px;
+  font-size: 38px;
+  text-align: center;
+}
+
+nav a{
+  color:rgb(153, 153, 153);
+}
+
+  #aboutmenav{
+    grid-column: 2/3;
+    grid-row: 3 / 4;
+  }
+
+  #myworknav{
+    grid-column: 3/4;
+    grid-row: 3 / 4;
+  }
+
+  #contactmenav{
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+
+/* NAV END */
+
+.background{
+  background-image:url("https://brownnicholasj.github.io/nbrown_portfolio/assets/images/wcbackground.jpg");
+  height: 700px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position-y: 310px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+  }
+/* MAIN START */
+
+main{
+  display: flex;
+  flex-direction:column;
+  align-content: flex-start;
+  }
+
+
+  main > section{
+    box-sizing:content-box;
+    width: 100%;
+  }
+
+h2{
+  font-size: 2em;
+  text-align:center;
+}
+
+/* .contact{
+  display:flex;
+  flex-wrap: wrap;
+  align-self: center;
+  width: 75%;
+}
+
+
 
 .contact-section{
   display: flex;
@@ -78,12 +144,12 @@ h1{
 a:link, a:visited{
   color:inherit;
   text-decoration: none;
-}
+} */
 
 /* END HEADER SECTION */
 /* START NAV SECTION */
 
-nav{
+/* nav{
   display: flex;
   flex-direction:column;
   padding: 50px;
@@ -97,18 +163,30 @@ nav .toprow{
   justify-content: center;
 }
 
-nav .bottomrow{
-  display: flex;
+#bottomrow{
+  display: none;
   flex-direction: row;
-}
+  justify-content: center;
+} */
 
-.navbutton{
+/* .worksbutton:hover + #bottomrow{
+  display: flex;
+  flex-basis: 100%;
+
+} */
+
+/* .worksbutton{
   display: block;
   border: 2px solid grey;
   background-image: linear-gradient(to bottom,black,rgb(1, 1, 71));
   padding: 1%;
   margin: 5px;
+  width: 250px;
+  font-size: 2.25em;
+  text-align:center;
 }
+
+
 
 .navbutton:hover {
   background-image: linear-gradient(to bottom,rgb(1, 1, 71),black);
@@ -117,14 +195,13 @@ nav .bottomrow{
 
 nav a:link{
   width: 25%;
-  font-size: 3vw;
   text-align: center;
-}
+} */
 
 /* END NAV SECTION */
 /* START MAIN SECTION */
 
-main{
+/* main{
   display:flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -144,8 +221,63 @@ main img{
   height: 300px;
   width: 600px;
   flex: 1 0 600px;
+} */
+
+/* ABOUT ME SECTION */
+
+/* .topmain{
+  padding: 0 0 50 0;
 }
 
+.topmain:hover {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 100 0;
+}
+
+#aboutme p {
+  display: none;
+  font-size: 2.5em;
+}
+
+  #aboutme:hover{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+  }
+
+  #aboutme:hover header{
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    height: 100px;
+    width: 100px;
+  }
+
+  #aboutme:hover p{
+    display: block
+  }
+
+  /* APPLICATION SECTION */
+
+/* #appsection{
+  display:none;
+}
+
+    .apps:hover #appsection{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 100%;
+      align-items: center;
+   }
+
+    .apps:hover header{
+      transform: rotate(-90deg);
+      white-space: nowrap;
+      height: 100px;
+      width: 100px;
+    }
 #app1{
   height: 600px;
   width: 800px;
@@ -164,4 +296,4 @@ footer{
   justify-content: center;
   width: 100%;
 }
-
+ */ */
