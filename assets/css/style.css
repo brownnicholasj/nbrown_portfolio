@@ -30,6 +30,10 @@ nav {
   border-bottom-style: solid;
   border-bottom-width: 10px;
   border-bottom-color: rgb(0,0,0, 0.2);
+  /* background-image:url("https://brownnicholasj.github.io/nbrown_portfolio/assets/images/wcbackground.jpg");
+  background-size: auto; */
+
+
 }
 /* portriat image settings */
 nav img {
@@ -51,6 +55,7 @@ nav h1{
   border-bottom-width: 10px;
   width: 100%;
   text-align: center;
+  
 }
 
 nav > div{
@@ -102,7 +107,7 @@ main{
 
 .background{
   background-image:url("https://brownnicholasj.github.io/nbrown_portfolio/assets/images/wcbackground.jpg");
-  height: 250px;
+  height: 200px;
   width: 100%;
   background-attachment: fixed;
   background-position-y: 250px;
@@ -183,25 +188,25 @@ p {
       grid-row: 3/3;
     }
 
-#contactme {
+#contact {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 70px 100px;
   
 }
 
-  #contactme > h2 {
+  #contact > h2 {
     grid-column: 1 / 4;
     grid-row:1 / 1;
   }
 
-  #contactme > div{
+  #contact > div{
     align-self:center;
     justify-self: center;
     font-size: 55;
   }
 
-  #contactme img{
+  #contact img{
     height: 55px;
     width: 55px;
     background-color:rgb(153, 153, 153)
