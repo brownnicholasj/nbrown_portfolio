@@ -2,6 +2,7 @@
 
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>Nicholas Brown Portfolio</title>
@@ -9,10 +10,13 @@
 
 
     <body>
-        
-        <nav>
+        <header>
             <img src="./assets/images/nbrown_profile.jpg" alt="self photo"/>
-            <h1>Nicholas Brown</h1>
+            <h1 id=firstName>Nicholas</h1>
+            <h1 id=lastName>Brown</h1>
+        </header>
+
+        <nav>
             <div id="aboutmenav">
                 <a href="#aboutme" >About Me</a>
             </div>
@@ -22,7 +26,6 @@
             <div id="contactmenav">
                 <a href="#contact">Contact</a>
             </div>
-
         </nav>
   
 
@@ -68,13 +71,13 @@
             <section id="contact">
                 <h2>Contact Me</h2>
                 <div id="resume">
-                    <a href="https://brownnicholasj.github.io/nbrown_portfolio/assets/images/NicholasBrown_resume.pdf"><img src="https://img.icons8.com/ios/452/open-resume.png" alt="resume logo"></a>
+                    <a href="https://brownnicholasj.github.io/nbrown_portfolio/assets/images/NicholasBrown_resume.pdf"><img src="https://img.icons8.com/ios/452/open-resume.png" alt="resume logo"><span>Resume</span></a>
                 </div>
                 <div id="linkedin">
-                    <a href="https://www.linkedin.com/in/nibrown/"><img src="https://cdn2.iconfinder.com/data/icons/social-media-with-original-colors/256/icon-linkedin.png" alt="linkedin logo"/></a>
+                    <a href="https://www.linkedin.com/in/nibrown/"><img src="https://cdn2.iconfinder.com/data/icons/social-media-with-original-colors/256/icon-linkedin.png" alt="linkedin logo"/><span>Linkedin</span</a>
                 </div>
                 <div id="github">
-                    <a href="https://github.com/brownnicholasj"><img src="https://cdn1.iconfinder.com/data/icons/social-media-vol-2-1/24/_github_copy-256.png" alt="github logo"/></a>
+                    <a href="https://github.com/brownnicholasj"><img src="https://cdn1.iconfinder.com/data/icons/social-media-vol-2-1/24/_github_copy-256.png" alt="github logo"/><span>GitHub</span></a>
                 </div>
             </section>
             
@@ -87,11 +90,12 @@
         <small>
             <!-- Last modified script found via stackoverflow user: https://stackoverflow.com/users/2223187/dick-guertin -->
             Last Modified: 
-            <script language="JavaScript">
+            <!-- <script language="JavaScript">
                 var lastmod=document.lastModified;
                 document.write(" "+lastmod.substr(0,10));
-            </script><br>
+            </script><br> -->
             Contact: see resume
         </small>
     </footer>
+
 </html>
