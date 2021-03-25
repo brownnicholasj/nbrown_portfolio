@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-.root{
- 
-}
-
 body {
   background-image: linear-gradient(to right,black,rgb(71, 1, 1),black);
   color: rgb(153, 153, 153);
@@ -16,18 +12,17 @@ body {
 
 /* HEADER START */
 header{
-  display: grid;
-  grid-template-columns: 150px auto;
-  grid-template-rows: 50% 50%;
-  column-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   height: 150px;
 
-
-  
 }
 header img {
   max-height:150px;
   object-fit: scale-down;
+  justify-self: flex-start;
 
 }
 
@@ -37,29 +32,31 @@ h1 {
   text-align: center;
 }
 
-  #firstName {
-    grid-column:2/3;
-    grid-row:1/2;
-    align-self: end;
-    justify-self: start;
-    position: relative;
+header > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#firstName {
+    border-bottom: 5px solid;
+}
 
 
-  }
+ /* }
   #lastName {
     grid-column:2/3;
     grid-row:2/3;
     align-self: start;
     justify-self: end;
     position: relative;
-  }
+  } */
 
 /* NAV SECTION   */
 
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   background-color: black;
   padding:5px;
 
@@ -79,13 +76,13 @@ nav > div{
 
 nav > div:hover {
   background-image: linear-gradient(to right, rgb(71,1,1),black,rgb(71,1,1));
-  box-shadow: 5px 5px 10px rgb(153, 153, 153);
-  filter:drop-shadow(color=rgb(153, 153, 153), offx=0, offy=0);
-
+  box-shadow: 2px 2px 10px 5px rgb(153, 153, 153);
+  border: 2px solid rgb(153, 153, 153);
 }
 
 nav a{
   color:rgb(153, 153, 153);
+  text-decoration: none;
 }
 
 /* NAV END */
@@ -94,12 +91,11 @@ nav a{
 main{
   display: flex;
   flex-direction:column;
-  align-content: flex-start;
+  align-content: center;
   }
 
   main > section{
     box-sizing:content-box;
-    width: 100%;
     margin-top: 20px;
   }
 
@@ -121,7 +117,7 @@ p {
 #works {
   display: grid;
   grid-template-columns: 10px auto 10px;
-  grid-template-rows: 70px 1fr;
+  grid-template-rows: 42px 1fr;
 }
 
   #works > h2 {
@@ -129,9 +125,8 @@ p {
     grid-row:1 / 1;
   }
 
-  #appsection img:hover{
-    box-shadow: 5px 5px 10px rgb(153, 153, 153);
-    filter:drop-shadow(color=rgb(153, 153, 153), offx=0, offy=0);
+  h3 {
+    padding: 4px 0;
   }
 
   #appsection {
@@ -143,6 +138,11 @@ p {
     row-gap: 10px;
     text-align: center;
     align-items: center;
+    padding-top: 5px;
+  }
+  #appsection img:hover{
+    box-shadow: 2px 2px 10px 5px rgb(153, 153, 153);
+    filter:drop-shadow(color=rgb(153, 153, 153), offx=0, offy=0);
   }
 
     #application-1{
@@ -151,8 +151,9 @@ p {
     }
 
       #application-1 img{
-        height: 100px;
-        width: 200px;
+        height: 25vw;
+        width: auto;;
+        object-fit: contain;
 
       }
 
@@ -177,45 +178,41 @@ p {
     }
 
     #subapps{
-      height: 75px;
-      width: 125px;
-
+      height: 15vw;
+      width: auto;
+      object-fit: contain;
     }
 /* MAIN END */
 /* CONTACT SECTION */
-    
-#contact {
-  display: grid;
-  grid-template-columns: repeat(3,auto);
-  grid-template-rows: 40px 60px 60px;
- 
-  
-}
 
-  #contact > h2 {
-    grid-column: 1 / 4;
-    grid-row:1 / 1;
-    align-self: end;
-  }
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
   #contact > div{
     margin-top: 5px;
-    align-self:start;
-    justify-self: center;
     font-size: 1em;
-
-    border:rgb(153, 153, 153) solid;
-    width: 75px;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
   }
 
+  #contact figure{
+    border:rgb(153, 153, 153) solid;
+    font-size: 1em;
+    text-align: center;
+    width: 30%;
+    max-width: 96px;
+ 
+  }
 
   #contact img{
     display: none;
-    height: 55px;
-    width: 55px;
+    /* height: 55px;
+    width: 55px; */
     background-color:rgb(153, 153, 153)
   }
 
@@ -223,169 +220,144 @@ p {
     text-decoration: none;
   }
 
+  #contact p {
+    position: relative;
+    right: 20%;
+    color:rgb(153, 153, 153);
+  }
 
-  #contact div:hover {
-    box-shadow: 5px 5px 10px rgb(153, 153, 153);
+  #contact figure:hover {
+    box-shadow: 2px 2px 10px 5px rgb(153, 153, 153);
     filter:drop-shadow(color=rgb(153, 153, 153), offx=0, offy=0);
 
   }
 
-  #contact p{
-    position: relative;
-    right: 50%;
-    color:rgb(153, 153, 153);
-  }
-
-  #resume {
-    grid-column: 1/2;
-    grid-row: 2/4;
-    }
-
-  #linkedin {
-    grid-column: 2/3;
-    grid-row: 2/4;
-  }
-
-  #github {
-    grid-column: 3/4;
-    grid-row: 2/4;
-  }
 
 /* FOOTER START */
 footer{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 20px;
+  font-size: 0.75em;
+  text-align: center;
 
 }
 
-@media screen and (min-width: 400px){
-  #firstName {
-    position: relative;
-    left: 25%;
-
-  }
-  #lastName {
-    position: relative;
-    right: 25%;
+ @media screen and (min-width: 768px){
+  html{
+    margin: 0 150px;
   }
 
   #application-1 img{
     height: 150px;
-    width: 300;
+    width: auto;
+    object-fit: contain;
 
   }
 
-  #subapps{
-    height: 100px;
-    width: 175px;
-
-  }
+#subapps{
+  height: 75px;
+  width: auto;
+  object-fit: contain;
 }
 
-@media screen and (min-width: 768px) {
-  body {
+ }
+
+@media screen and (min-width: 1024px) {
+ html{
+   margin: 0 50px;
+ }
+
+ header{
+   width: 50%;
+   margin: 0 25%;
+ }
+
+ .background {
+  background-image: url("https://brownnicholasj.github.io/nbrown_portfolio/assets/images/wcbackground.jpg");
+  height: 100px;
+ }
+
+main{
+  align-content:flex-start;
+}
+
+#aboutme {
+  display: flex;
+  flex-direction: row;
+  background-color:rgb(153, 153, 153, 0.2);
+  height: 168px;
+  }
+
+  #aboutme > h2{
+    width: 168px;
+    position: relative;
+    left: 10px;
+  }
+
+  #aboutme > article {
+    align-self: center;
     font-size: 1.25em;
   }
-  
-  header{
-    grid-template-columns: 300px auto;
-    grid-template-rows: 50% 50%;
-    height: 300px;
-     
+
+#works {
+  grid-template-columns: 125px 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: rgb(153, 153, 153, 0.2);
   }
 
-  header img {
-    max-height:300px;
-    object-fit: scale-down;
-
+  #works > h2{
+    grid-column: 1/2;
+    grid-row: 1/5;
+    margin-left: 15px;
   }
 
-  h1 {
-    font-size: 4em;
-  }
-
-  #application-1 img{
-    height: 200px;
-    width: 550px;
-
-  }
-
-  #subapps{
-    height: 150px;
-    width: 300px;
-
-  }
-
-  #contact img{
-    display: block;
-    height: 55px;
-    width: 55px;
-    background-color:rgb(153, 153, 153)
-  }
-
-  #resume{
-    font-size: 1em;
-    color:rgb(153, 153, 153);
-    border:rgb(153, 153, 153) solid;
-    padding: 5px;
-    border-radius: 10px 6px;
-   }
-
-   #resume p{
-     right: 75%;
-   }
-
-   #linkedin{
-    font-size: 1em;
-    color:rgb(153, 153, 153);
-    border:rgb(153, 153, 153) solid;
-    padding: 5px;
-    border-radius: 10px 6px;
-   }
-
-   #linkedin p{
-     right: 75%;
-     font-size: .9em;
-   }
-
-   #github{
-    font-size: 1em;
-    color:rgb(153, 153, 153);
-    border:rgb(153, 153, 153) solid;
-    padding: 5px;
-    border-radius: 10px 6px;
-   }
-
-   #github p{
-     right: 70%;
-   }
-}  
-
-@media screen and (min-width: 1440px) {
-
-  #lastName {
+  #appsection{
     position: relative;
-    right: 50%;
+    left: 15%;
   }
 
   #application-1 img{
-    height: 400px;
-    width: 800px;
+    height: 17vw;
+    width: auto;
+    object-fit: contain;
 
   }
 
   #subapps{
-    height: 250px;
-    width: 600px;
-
+    height: 13vw;
+    width: auto;
+    object-fit: contain;
+    padding: 5px;
   }
+#contact {
+  display: flex;
+  flex-direction: row;
+  height: 122px;
+  background-color: rgb(153, 153, 153, 0.2);
+  }
+
+  #contact > h2{
+    width: 140px;
+  }
+
+  #contact > div {
+    height: 40px;
+    align-self: center;
+  }
+
+  main h2{
+    transform: rotate(-90deg);
+    text-align:center;
+    height: 70px;
+    align-self: center;
+  }
+
+
 }
-
-
 
 @media screen and (min-width: 2560px) {
 html{
-  margin: 0 500px;
+  margin: 0 300px;
 }
 }
