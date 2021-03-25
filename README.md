@@ -1,38 +1,58 @@
 # Nicholas Brown Portfolio
 ## Description
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-## Table of Contents (Optional)
-If your README is long, add a table of contents to make it easy for users to find what they need.
-- [Installation](#installation)
+This portfolio page is to serve as a repository to showcase my work for both personal and professional projects.
+- This will be a place I can store my work overtime to allow me to  track my skills and advancement
+- Building this is the first phase of what will adjust and evolve along with my coding education.
+- Having everything in one location allows me to easily recall, showcase, or sunset old works to allow them to serve multiple purposes over time.
+- I think I learned not to get hung up on one part of the design/layout and to come back to it.  I wasted a lot of time on a background that delayed the overall completion of the webpage. If not getting sidetracked, I think completing the rest of the page would have helped me make decisions on the background.
+## Table of Contents 
+- [Outline](#outline)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)
-## Installation
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+## Outline
+The portfolio page is setup as a one page design to highlight my work, with links to those pieces of work, when necessairy.  It gives users the ability to find/contact me.
+
+I follow a pretty simple, yet accessible layout utilizing semantic tags <br>
+'body'<br>
+&ensp; 'header'<br>
+&ensp; 'nav'<br>
+&ensp; 'main'<br>
+&ensp; &ensp;        'section'<br>
+&ensp; &ensp; &ensp;            'h2'<br>
+&ensp; &ensp; &ensp;            'article<br>
+&ensp; &ensp;        'section'<br>
+&ensp; &ensp; &ensp;            'h2'<br>
+&ensp; &ensp; &ensp;            'article<br>
+&ensp; &ensp; &ensp; &ensp;                'h3'<br>
+&ensp; &ensp; &ensp;            'article<br>
+&ensp; &ensp; &ensp; &ensp;                'h3'<br>
+&ensp; &ensp; &ensp;            'article<br>
+&ensp; &ensp; &ensp; &ensp;                'h3'<br>
+&ensp; &ensp; &ensp;            'article<br>
+&ensp; &ensp; &ensp; &ensp;                'h3'<br>
+&ensp; &ensp; &ensp;            'article<br>
+&ensp; &ensp; &ensp; &ensp;                'h3'<br>
+&ensp; &ensp;        'section'<br>
+&ensp; &ensp; &ensp;            'h2'<br>
+&ensp; &ensp; &ensp;            'figure'<br>
+&ensp; &ensp; &ensp;            'figure'<br>
+&ensp; &ensp; &ensp;            'figure'<br>
+&ensp; 'footer'<br>
+
 ## Usage
-Provide instructions and examples for use. Include screenshots as needed.
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+All links within the page will have a shadow upon hover to visibly show interaction ability.
+
+
+![alt text](./assets/images/shadowLink.jpg)<br><br>
+
+
+Styled to mobile screen and increases using @media query.
+
+![alt text](./assets/images/mediaQuery.jpg)<br><br>
+
+I originally used a lot of grid to position my site, but I found it caused a lot more css code to setup and maintain, especially with media queries in place.  I switch a lot of it back to flexbox because it was simpler.  I like the control the grid gives me so eventually I might go back, but there are more functions/features that might work better for me in the future.
 ## Credits
-List your collaborators, if any, with links to their GitHub profiles.
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-If you followed tutorials, include links to those here as well.
-## License
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
----
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-## Badges
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-## Features
-If your project has a lot of features, list them here.
-## How to Contribute
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-## Tests
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+One of the first things I did was add the footer and I wanted an 'updated date' feature so users would be able to tell the last time it was updated and/if the page is relevant with current work.
+
+I found a JavaScript to do this, but this was before we started the JS classes, so in comments of html "Last modified script found via stackoverflow user: https://stackoverflow.com/users/2223187/dick-guertin"
+
