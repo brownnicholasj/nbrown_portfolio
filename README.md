@@ -1,4 +1,6 @@
 # Nicholas Brown Portfolio
+## Link to Portfolio
+https://brownnicholasj.github.io/nbrown_portfolio/
 ## Description
 This portfolio page is to serve as a repository to showcase my work for both personal and professional projects.
 - This will be a place I can store my work overtime to allow me to  track my skills and advancement
