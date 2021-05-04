@@ -135,6 +135,24 @@ h3 {
 	max-width: 450px;
 }
 
+#works article {
+	display: flex;
+	flex-direction: column;
+	padding-top: 7px;
+}
+.repo {
+	color: rgb(153, 153, 153);
+	text-decoration: none;
+	font-size: 1rem;
+	width: 100px;
+	align-self: center;
+}
+
+.repo:hover {
+	text-shadow: 1px 1px 10px rgb(153, 153, 153);
+	filter: drop-shadow(color=rgb(153, 153, 153), offx=0, offy=0);
+}
+
 /* MAIN END */
 /* CONTACT SECTION */
 
@@ -161,7 +179,7 @@ h3 {
 }
 
 #contact img {
-	display: block;
+	display: none;
 	height: 60px;
 	width: 64px;
 	background-color: rgb(153, 153, 153);
@@ -208,11 +226,22 @@ footer {
 	.background {
 		background-image: url('https://brownnicholasj.github.io/nbrown_portfolio/assets/images/wcbackground.jpg');
 		height: 100px;
-		box-shadow: 0 0 50px black;
+		width: 5076px;
+		animation: slide 60s linear infinite;
+	}
+
+	@keyframes slide {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+		100% {
+			transform: translate3d(-1692px, 0, 0);
+		}
 	}
 
 	main {
 		align-content: flex-start;
+		overflow: hidden;
 	}
 
 	main h2 {
@@ -324,6 +353,9 @@ footer {
 		grid-column: 2/2;
 		grid-row: 1/2;
 		align-self: center;
+	}
+	#contact img {
+		display: block;
 	}
 }
 
