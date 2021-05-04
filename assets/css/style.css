@@ -231,11 +231,11 @@ footer {
 
 	.background {
 		background-image: url('https://brownnicholasj.github.io/nbrown_portfolio/assets/images/wcbackground.jpg');
-		height: 4096px;
-		width: 4096px;
+		height: 1609px;
+		width: 1612px;
 		position: relative;
-		left: -10%;
-		animation: slide 60s linear infinite;
+		opacity: 0.25;
+		animation: slide 25s linear infinite;
 	}
 
 	@keyframes slide {
