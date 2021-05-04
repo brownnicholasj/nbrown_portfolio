@@ -1,106 +1,140 @@
 <html lang="en-us">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>Nicholas Brown Portfolio</title>
+	</head>
 
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/reset.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Nicholas Brown Portfolio</title>
-    </head>
+	<body>
+		<header>
+			<img src="./assets/images/nbrown_profile.jpg" alt="self photo" />
+			<div>
+				<h1 id="firstName">Nicholas</h1>
+				<h1 id="lastName">Brown</h1>
+			</div>
+		</header>
 
+		<nav>
+			<div id="aboutmenav">
+				<a href="#aboutme">About Me</a>
+			</div>
+			<div id="myworknav">
+				<a href="#works">My Work</a>
+			</div>
+			<div id="contactmenav">
+				<a href="#contact">Contact</a>
+			</div>
+		</nav>
 
-    <body>
-        <header>
-            <img src="./assets/images/nbrown_profile.jpg" alt="self photo"/>
-            <div>
-                <h1 id=firstName>Nicholas</h1>
-                <h1 id=lastName>Brown</h1>
-            </div>    
-            </header>
+		<main>
+			<div class="background"></div>
+			<section id="aboutme">
+				<h2>About Me</h2>
+				<article>
+					<p>
+						Multidisciplinary Full Stack Web Developer and Product Owner that
+						combines experience and traditional learning methods to solve
+						critical problems for users.
+					</p>
+					<p>
+						Over 10 years of Transportation and Supply Chain experience, along
+						with a Full Stack Development Certificate from the University of
+						Kansas.
+					</p>
+					<p>
+						Excited to advance products with both business and technical aspects
+						to optimize outcomes for all stakeholders.
+					</p>
+				</article>
+			</section>
 
-        <nav>
-            <div id="aboutmenav">
-                <a href="#aboutme" >About Me</a>
-            </div>
-            <div id="myworknav">
-                <a href="#works">My Work</a>
-            </div>
-            <div id="contactmenav">
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-  
-        <main>
-            <div class="background"></div>
-            <section id="aboutme">
-                    <h2>About Me</h2>
-                    <article>
-                        <p>Multidisciplinary Full Stack Web Developer and Product Owner that combines experience and traditional learning methods to solve critical problems for users.</p>
-                        <p>Over 10 years of Transportation and Supply Chain experience, along with a Full Stack Development Certificate from the University of Kansas.</p>
-                        <p>Excited to advance products with both business and technical aspects to optimize outcomes for all stakeholders.</p>
-                    </article>
-            </section>
+			<section id="works">
+				<h2>My Works</h2>
+				<div id="appsection">
+					<article id="application-1">
+						<h3>Jeopardy!</h3>
+						<a
+							href="https://brownnicholasj.github.io/jeopardy-game/"
+							target="_blank"
+							><img
+								id="app1"
+								src="./assets/images/jeopardy.jpg"
+								alt="screenshot of jeopardy gameboard"
+						/></a>
+					</article>
+					<article id="application-2">
+						<h3>Day Planner</h3>
+						<a
+							href="https://brownnicholasj.github.io/day_planner/"
+							target="_blank"
+							><img
+								id="app2"
+								src="./assets/images/dayplanner.jpg"
+								alt="screenshot of day planner entries"
+						/></a>
+					</article>
+					<article id="application-3">
+						<h3>Weather Dashboard</h3>
+						<a
+							href="https://brownnicholasj.github.io/weather_dashboard/"
+							target="_blank"
+							><img
+								id="app3"
+								src="./assets/images/weatherdash.jpg"
+								alt="screenshot of weather dashboard results"
+						/></a>
+					</article>
+				</div>
+			</section>
 
-            <section id="works">
-                <h2>My Works</h2>
-                <div id="appsection">
-                    <article id="application-1">
-                        <h3>Refactoring</h3>
-                        <a href="https://brownnicholasj.github.io/horiseon_agency/"><img id="app1" src="./assets/images/refactoring.JPG" alt="screenshot of HTML code"/></a>
-                    </article>
-                    <article id="application-2">
-                        <h3>Application 2</h3>
-                        <a href="https://brownnicholasj.github.io/nbrown_portfolio/assets/images/underconstruction.jpg"><img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/></a>
-                    </article>
-                    <article id="application-3">
-                        <h3>Application 3</h3>
-                        <a href="https://brownnicholasj.github.io/nbrown_portfolio/assets/images/underconstruction.jpg"><img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/></a>
-                    </article>
-                    <article id="application-4">
-                        <h3>Application 4</h3>
-                        <a href="https://brownnicholasj.github.io/nbrown_portfolio/assets/images/underconstruction.jpg"><img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/></a>
-                    </article>
-                    <article id="application-5">
-                        <h3>Application 5</h3>
-                        <a href="https://brownnicholasj.github.io/nbrown_portfolio/assets/images/underconstruction.jpg"><img id="subapps" src="./assets/images/placeholder.png" alt="placeholder image"/></a>
-                    </article>
-                </div>
-            </section>
+			<section id="contact">
+				<h2>Contact Me</h2>
+				<div>
+					<figure id="resume">
+						<a
+							href="https://brownnicholasj.github.io/nbrown_portfolio/assets/images/NicholasBrown_resume.pdf"
+							target="_blank"
+						>
+							<img
+								src="https://img.icons8.com/ios/452/open-resume.png"
+								alt="resume logo"
+							/>
+							<p>Resume</p>
+						</a>
+					</figure>
+					<figure id="linkedin">
+						<a href="https://www.linkedin.com/in/nibrown/" target="_blank">
+							<img
+								src="https://cdn2.iconfinder.com/data/icons/social-media-with-original-colors/256/icon-linkedin.png"
+								alt="linkedin logo"
+							/>
+							<p>Linkedin</p>
+						</a>
+					</figure>
+					<figure id="github">
+						<a href="https://github.com/brownnicholasj" target="_blank">
+							<img
+								src="https://cdn1.iconfinder.com/data/icons/social-media-vol-2-1/24/_github_copy-256.png"
+								alt="github logo"
+							/>
+							<p>GitHub</p>
+						</a>
+					</figure>
+				</div>
+			</section>
+		</main>
 
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <div>   
-                    <figure id="resume">
-                        <a href="https://brownnicholasj.github.io/nbrown_portfolio/assets/images/NicholasBrown_resume.pdf">
-                            <img src="https://img.icons8.com/ios/452/open-resume.png" alt="resume logo">
-                            <p>Resume</p>
-                        </a>
-                    </figure>
-                    <figure id="linkedin">
-                        <a href="https://www.linkedin.com/in/nibrown/">
-                            <img src="https://cdn2.iconfinder.com/data/icons/social-media-with-original-colors/256/icon-linkedin.png" alt="linkedin logo"/>
-                            <p>Linkedin</p>
-                        </a>
-                    </figure>
-                    <figure id="github">
-                        <a href="https://github.com/brownnicholasj">
-                            <img src="https://cdn1.iconfinder.com/data/icons/social-media-vol-2-1/24/_github_copy-256.png" alt="github logo"/>
-                            <p>GitHub</p>
-                        </a>
-                    </figure>
-                </div>
-            </section>
-
-        </main>
-
-        <footer>
-            <!-- Last modified script found via stackoverflow user: https://stackoverflow.com/users/2223187/dick-guertin -->
-            Last Modified:
-            <script language="JavaScript">
-                var lastmod=document.lastModified;
-                document.write(" "+lastmod.substr(0,10));
-            </script><br>
-            Contact: see resume
-        </footer>
-    </body>
+		<footer>
+			<!-- Last modified script found via stackoverflow user: https://stackoverflow.com/users/2223187/dick-guertin -->
+			Last Modified:
+			<script language="JavaScript">
+				var lastmod = document.lastModified;
+				document.write(' ' + lastmod.substr(0, 10));
+			</script>
+			<br />
+			Contact: see resume
+		</footer>
+	</body>
 </html>
