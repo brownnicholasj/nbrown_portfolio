@@ -1,5 +1,9 @@
 import React from 'react';
 
 export default function Work() {
-	return <h1>work section</h1>;
+	return (
+		<div>
+			<h2>work section</h2>
+		</div>
+	);
 }
