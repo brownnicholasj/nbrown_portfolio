@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './Card';
 import jeopardyimage from '../images/jeopardy.jpg';
 import eventimage from '../images/eventplanning.jpg';
 import weatherimage from '../images/weatherdash.jpg';
@@ -28,24 +29,15 @@ export default function Work() {
 	return (
 		<section>
 			<h2>work section</h2>
-			{projectArr.map((value, index) => {
-				return (
-					<div id='appsection'>
-						<h3 id={index}>{value.name}</h3>
-						<a href={value.link} target='_blank' rel='noreferrer'>
-							<img id={index} src={value.image} alt='screenshot of work' />
-						</a>
-						<a
-							href={value.git}
-							className='repo'
-							target='_blank'
-							rel='noreferrer'
-						>
-							<h4>Repository</h4>
-						</a>
-					</div>
-				);
-			})}
+			{projectArr.map((value, index) => (
+				<Card
+					name={value.name}
+					link={value.link}
+					image={value.image}
+					git={value.git}
+					key={index}
+				/>
+			))}
 		</section>
 	);
 }
