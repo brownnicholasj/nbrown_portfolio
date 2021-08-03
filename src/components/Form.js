@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/Form.css';
 
 function Form() {
 	const [email, setEmail] = useState('');
@@ -39,21 +40,21 @@ function Form() {
 					name='email'
 					onChange={handleInputChange}
 					type='email'
-					placeholder='email'
+					placeholder='your email'
 				/>
 				<input
 					value={userName}
 					name='userName'
 					onChange={handleInputChange}
 					type='text'
-					placeholder='username'
+					placeholder='your name'
 				/>
 				<input
 					value={message}
 					name='message'
 					onChange={handleInputChange}
 					type='message'
-					placeholder='message'
+					placeholder='your message'
 				/>
 				<button type='button' onClick={handleFormSubmit}>
 					Submit
