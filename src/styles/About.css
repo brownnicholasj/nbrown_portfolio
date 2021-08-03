@@ -1,0 +1,39 @@
+h2 {
+	font-size: 2em;
+	text-align: center;
+	border-bottom: rgb(153, 153, 153) solid;
+	border-bottom-width: 5px;
+}
+
+p {
+	font-size: 1em;
+	margin: 10px 40px;
+}
+
+section:hover {
+	background-color: rgb(153, 153, 153, 0.2);
+	box-shadow: 0px 0px 20px white;
+}
+
+@media screen and (min-width: 768px) {
+	#aboutme {
+		display: grid;
+		grid-template-columns: 50px 1fr;
+		grid-template-rows: 1fr;
+		/* background-color: rgb(153, 153, 153, 0.2); */
+		height: 25vh;
+	}
+
+	#aboutme > h2 {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		font-size: 2rem;
+		width: 25vh;
+		justify-self: center;
+	}
+
+	#aboutme > article {
+		align-self: center;
+		font-size: 1.25r em;
+	}
+}
