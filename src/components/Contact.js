@@ -1,9 +1,10 @@
 import React from 'react';
+import '../styles/Contact.css';
 
 export default function Contact() {
 	return (
-		<div>
-			<h2>contact section</h2>
+		<section id='contact'>
+			<h2>Contact Me</h2>
 			<figure id='resume'>
 				<a
 					href='https://brownnicholasj.github.io/nbrown_portfolio/assets/images/NicholasBrown_resume.pdf'
@@ -43,6 +44,6 @@ export default function Contact() {
 					<p>GitHub</p>
 				</a>
 			</figure>
-		</div>
+		</section>
 	);
 }

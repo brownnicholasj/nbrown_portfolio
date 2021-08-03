@@ -1,0 +1,62 @@
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#contact > div {
+	margin-top: 5px;
+	font-size: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+#contact figure {
+	border: rgb(153, 153, 153) solid;
+	font-size: 1em;
+	width: auto;
+	max-width: 96px;
+}
+
+#contact a {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+#contact img {
+	display: none;
+	height: 60px;
+	width: 64px;
+	background-color: rgb(153, 153, 153);
+}
+
+#contact p {
+	color: rgb(153, 153, 153);
+	margin: 0;
+	font-weight: 900;
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	#contact {
+		display: grid;
+		grid-template-columns: 50px 1fr;
+		grid-template-rows: 1fr;
+		height: 30vh;
+		/* background-color: rgb(153, 153, 153, 0.2); */
+	}
+
+	#contact > div {
+		grid-column: 2/2;
+		grid-row: 1/2;
+		align-self: center;
+	}
+
+	#contact img {
+		display: block;
+	}
+}

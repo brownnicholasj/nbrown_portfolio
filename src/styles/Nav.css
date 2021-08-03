@@ -1,0 +1,23 @@
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: black;
+	padding: 5px;
+}
+
+nav > div {
+	border: 2px solid black;
+	box-shadow: 2px 4px black;
+	background-image: linear-gradient(to right, black, rgb(71, 1, 1), black);
+	padding: 1%;
+	margin: auto;
+	width: 150px;
+	font-size: 1em;
+	text-align: center;
+}
+
+nav a {
+	color: rgb(153, 153, 153);
+	text-decoration: none;
+}
