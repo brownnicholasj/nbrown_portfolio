@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nbrown_portfolio/static/css/main.9f7b94d1.chunk.css",
+    "main.js": "/nbrown_portfolio/static/js/main.5849e6e9.chunk.js",
+    "main.js.map": "/nbrown_portfolio/static/js/main.5849e6e9.chunk.js.map",
+    "runtime-main.js": "/nbrown_portfolio/static/js/runtime-main.c0c1c1f3.js",
+    "runtime-main.js.map": "/nbrown_portfolio/static/js/runtime-main.c0c1c1f3.js.map",
+    "static/js/2.f1e12f50.chunk.js": "/nbrown_portfolio/static/js/2.f1e12f50.chunk.js",
+    "static/js/2.f1e12f50.chunk.js.map": "/nbrown_portfolio/static/js/2.f1e12f50.chunk.js.map",
+    "index.html": "/nbrown_portfolio/index.html",
+    "static/css/main.9f7b94d1.chunk.css.map": "/nbrown_portfolio/static/css/main.9f7b94d1.chunk.css.map",
+    "static/js/2.f1e12f50.chunk.js.LICENSE.txt": "/nbrown_portfolio/static/js/2.f1e12f50.chunk.js.LICENSE.txt",
+    "static/media/eventplanning.6b3623c0.jpg": "/nbrown_portfolio/static/media/eventplanning.6b3623c0.jpg",
+    "static/media/jeopardy.19b45cf6.jpg": "/nbrown_portfolio/static/media/jeopardy.19b45cf6.jpg",
+    "static/media/nbrown_profile.786b674b.jpg": "/nbrown_portfolio/static/media/nbrown_profile.786b674b.jpg",
+    "static/media/weatherdash.fac5a384.jpg": "/nbrown_portfolio/static/media/weatherdash.fac5a384.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c0c1c1f3.js",
+    "static/js/2.f1e12f50.chunk.js",
+    "static/css/main.9f7b94d1.chunk.css",
+    "static/js/main.5849e6e9.chunk.js"
+  ]
+}
