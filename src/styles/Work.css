@@ -44,6 +44,17 @@ h3 {
 	align-self: center;
 }
 
+#appsection img:hover {
+	box-shadow: 2px 2px 10px 5px rgb(153, 153, 153);
+	filter: drop-shadow(color=rgb(153, 153, 153), offx=0, offy=0);
+	border: 3px solid rgb(153, 153, 153);
+}
+
+.repo:hover {
+	text-shadow: 1px 1px 10px rgb(153, 153, 153);
+	filter: drop-shadow(color=rgb(153, 153, 153), offx=0, offy=0);
+}
+
 @media screen and (min-width: 768px) {
 	#works {
 		display: grid;
