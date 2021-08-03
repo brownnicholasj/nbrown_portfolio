@@ -1,17 +1,28 @@
 import React from 'react';
 import '../styles/Nav.css';
 
-export default function Nav() {
+export default function Nav({ currentPage, handlePageChange }) {
 	return (
 		<nav>
 			<div>
-				<a href='#aboutme'>About Me</a>
+				<a href='#header' onClick={() => handlePageChange('About')}>
+					About Me
+				</a>
 			</div>
 			<div>
-				<a href='#works'>My Work</a>
+				<a href='#header' onClick={() => handlePageChange('Work')}>
+					My Work
+				</a>
 			</div>
 			<div>
-				<a href='#contact'>Contact</a>
+				<a href='#header' onClick={() => handlePageChange('Contact')}>
+					Contact
+				</a>
+			</div>
+			<div>
+				<a href='#header' onClick={() => handlePageChange('Form')}>
+					Send Message
+				</a>
 			</div>
 		</nav>
 	);

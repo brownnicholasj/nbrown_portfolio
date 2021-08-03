@@ -28,7 +28,7 @@
 }
 
 #contact img {
-	display: none;
+	display: block;
 	height: 60px;
 	width: 64px;
 	background-color: rgb(153, 153, 153);

@@ -26,12 +26,12 @@ main > section {
 @media screen and (min-width: 1200px) {
 	main,
 	nav {
-		margin: 0 20%;
+		margin: 0 10%;
 	}
 }
 @media screen and (min-width: 2000px) {
 	main,
 	nav {
-		margin: 0 30%;
+		margin: 0 10%;
 	}
 }

@@ -30,17 +30,19 @@ The portfolio page is setup as a one page design to highlight my work, with
 links to those pieces of work, when necessary. It gives users the ability to
 find/contact me.
 
-I follow a pretty simple, yet accessible layout utilizing semantic tags <br>
-'body'<br> &ensp; 'header'<br> &ensp; 'nav'<br> &ensp; 'main'<br> &ensp; &ensp;
-'section'<br> &ensp; &ensp; &ensp; 'h2'<br> &ensp; &ensp; &ensp; 'article<br>
-&ensp; &ensp; 'section'<br> &ensp; &ensp; &ensp; 'h2'<br> &ensp; &ensp; &ensp;
-'article<br> &ensp; &ensp; &ensp; &ensp; 'h3'<br> &ensp; &ensp; &ensp;
-'article<br> &ensp; &ensp; &ensp; &ensp; 'h3'<br> &ensp; &ensp; &ensp;
-'article<br> &ensp; &ensp; &ensp; &ensp; 'h3'<br> &ensp; &ensp; &ensp;
-'article<br> &ensp; &ensp; &ensp; &ensp; 'h3'<br> &ensp; &ensp; &ensp;
-'article<br> &ensp; &ensp; &ensp; &ensp; 'h3'<br> &ensp; &ensp; 'section'<br>
-&ensp; &ensp; &ensp; 'h2'<br> &ensp; &ensp; &ensp; 'figure'<br> &ensp; &ensp;
-&ensp; 'figure'<br> &ensp; &ensp; &ensp; 'figure'<br> <br>
+Pages are called conditionally with reactJS with options of About Me, My Work,
+Contact Info, and Message Me.
+
+About me gives a quick description of my background and skills
+
+My Work highlights some of my projects and repositories that users can navigate
+to test and review
+
+Contact will give the user links to my resume, my linked in page, my github, and
+my stack overflow
+
+Message me will allow the user to input their email, name, and a message to send
+a direct message to me from the portfolio (does not currently send a message)
 
 ## Usage
 

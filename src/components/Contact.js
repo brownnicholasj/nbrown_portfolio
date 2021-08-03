@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Contact.css';
+import Stack from '../images/stack.png';
 
 export default function Contact() {
 	return (
@@ -43,6 +44,16 @@ export default function Contact() {
 							alt='github logo'
 						/>
 						<p>GitHub</p>
+					</a>
+				</figure>
+				<figure id='stack'>
+					<a
+						href='https://stackoverflow.com/users/15130187/brownnicholasj'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<img src={Stack} alt='stackoverflow logo' />
+						<p>Stack</p>
 					</a>
 				</figure>
 			</div>
