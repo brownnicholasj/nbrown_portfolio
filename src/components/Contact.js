@@ -9,7 +9,7 @@ export default function Contact() {
 			<div>
 				<figure id='resume'>
 					<a
-						href='https://brownnicholasj.github.io/nbrown_portfolio/assets/images/NicholasBrown_resume.pdf'
+						href='https://brownnicholasj.github.io/nbrown_portfolio/src/images/NicholasBrown_resume.pdf'
 						target='_blank'
 						rel='noreferrer'
 					>
