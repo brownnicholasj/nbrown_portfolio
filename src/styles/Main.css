@@ -16,3 +16,22 @@ main > section {
 		align-self: center;
 	}
 }
+
+@media screen and (min-width: 1024px) {
+	main,
+	nav {
+		margin: 0 10%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	main,
+	nav {
+		margin: 0 20%;
+	}
+}
+@media screen and (min-width: 2000px) {
+	main,
+	nav {
+		margin: 0 30%;
+	}
+}
