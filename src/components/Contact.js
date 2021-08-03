@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Contact.css';
 import Stack from '../images/stack.png';
-import Resume from '../image/NicholasBrown_resume.pdf';
 
 export default function Contact() {
 	return (
@@ -9,7 +8,11 @@ export default function Contact() {
 			<h2>Contact Me</h2>
 			<div>
 				<figure id='resume'>
-					<a href={Resume} target='_blank' rel='noreferrer'>
+					<a
+						href='https://github.com/brownnicholasj/nbrown_portfolio/raw/main/src/images/NicholasBrown_resume.pdf'
+						target='_blank'
+						rel='noreferrer'
+					>
 						<img
 							src='https://img.icons8.com/ios/452/open-resume.png'
 							alt='resume logo'
