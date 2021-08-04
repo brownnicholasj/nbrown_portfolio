@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import '../styles/Form.css';
 
+import { checkInput, validateEmail } from '../utils/helpers';
+
 function Form() {
 	const [email, setEmail] = useState('');
 	const [userName, setUserName] = useState('');
 	const [message, setMessage] = useState('');
+	const [errorMessage, setErrorMessage] = useState('');
 
 	const handleInputChange = (e) => {
 		const { target } = e;
 		const inputType = target.name;
 		const inputValue = target.value;
 
-		// Based on the input type, we set the state of either email, username, and password
 		if (inputType === 'email') {
 			setEmail(inputValue);
 		} else if (inputType === 'userName') {
@@ -24,12 +26,33 @@ function Form() {
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
 
+		if (!validateEmail(email)) {
+			setErrorMessage('Email is invalid');
+			return;
+		}
+
+		if (checkInput(email)) {
+			setErrorMessage('Please provide email');
+			return;
+		}
+
+		if (checkInput(userName)) {
+			setErrorMessage('Please provide your name');
+			return;
+		}
+
+		if (checkInput(message)) {
+			setErrorMessage('Please provide a message');
+			return;
+		}
+
 		alert(
 			`Hello ${userName}, thank you for the message. I will contact you as soon as possible to answer any questions.`
 		);
 
 		setUserName('');
 		setEmail('');
+		setMessage('');
 	};
 
 	return (
@@ -60,6 +83,11 @@ function Form() {
 					Submit
 				</button>
 			</form>
+			{errorMessage && (
+				<div>
+					<p className='error-text'>{errorMessage}</p>
+				</div>
+			)}
 		</div>
 	);
 }
