@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/nbrown_portfolio/static/css/main.ca398ffc.chunk.css",
-    "main.js": "/nbrown_portfolio/static/js/main.1851159b.chunk.js",
-    "main.js.map": "/nbrown_portfolio/static/js/main.1851159b.chunk.js.map",
+    "main.css": "/nbrown_portfolio/static/css/main.e9929bf5.chunk.css",
+    "main.js": "/nbrown_portfolio/static/js/main.5a27bc82.chunk.js",
+    "main.js.map": "/nbrown_portfolio/static/js/main.5a27bc82.chunk.js.map",
     "runtime-main.js": "/nbrown_portfolio/static/js/runtime-main.c0c1c1f3.js",
     "runtime-main.js.map": "/nbrown_portfolio/static/js/runtime-main.c0c1c1f3.js.map",
     "static/js/2.3feb3b77.chunk.js": "/nbrown_portfolio/static/js/2.3feb3b77.chunk.js",
     "static/js/2.3feb3b77.chunk.js.map": "/nbrown_portfolio/static/js/2.3feb3b77.chunk.js.map",
     "index.html": "/nbrown_portfolio/index.html",
-    "static/css/main.ca398ffc.chunk.css.map": "/nbrown_portfolio/static/css/main.ca398ffc.chunk.css.map",
+    "static/css/main.e9929bf5.chunk.css.map": "/nbrown_portfolio/static/css/main.e9929bf5.chunk.css.map",
     "static/js/2.3feb3b77.chunk.js.LICENSE.txt": "/nbrown_portfolio/static/js/2.3feb3b77.chunk.js.LICENSE.txt",
     "static/media/eventplanning.6b3623c0.jpg": "/nbrown_portfolio/static/media/eventplanning.6b3623c0.jpg",
     "static/media/jeopardy.19b45cf6.jpg": "/nbrown_portfolio/static/media/jeopardy.19b45cf6.jpg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.c0c1c1f3.js",
     "static/js/2.3feb3b77.chunk.js",
-    "static/css/main.ca398ffc.chunk.css",
-    "static/js/main.1851159b.chunk.js"
+    "static/css/main.e9929bf5.chunk.css",
+    "static/js/main.5a27bc82.chunk.js"
   ]
 }
