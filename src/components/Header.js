@@ -1,16 +1,58 @@
 import React from 'react';
-import portrait from '../images/nbrown_profile.jpg';
-import '../styles/Header.css';
+import Typography from '@material-ui/core/Typography';
+import Avatar from '@material-ui/core/Avatar';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import Typed from 'react-typed';
+import { makeStyles } from '@material-ui/core/styles';
+import logo from '../logo.png';
 
-export default function Header() {
+const useStyles = makeStyles((theme) => ({
+	logo: {
+		width: theme.spacing(15),
+		height: theme.spacing(15),
+		margin: theme.spacing(1),
+	},
+	title: {
+		color: 'tomato',
+	},
+	subtitle: {
+		color: 'tan',
+		textTransform: 'uppercase',
+	},
+	typedContainer: {
+		position: 'absolute',
+		top: '50%',
+		left: '50%',
+		transform: 'translate(-50%,-50%)',
+		width: '100vw',
+		textAlign: 'center',
+		zIndex: 1,
+	},
+}));
+
+const Header = () => {
+	const classes = useStyles();
+
 	return (
-		<header>
-			<img src={portrait} alt='self portrait' />
+		<Box className={classes.typedContainer}>
+			<Grid container justify='center'>
+				<Avatar className={classes.logo} src={logo} alt='NBrown logo' />
+			</Grid>
+			<Typography className={classes.title} variant='h4'>
+				<Typed strings={['Nicholas Brown']} typeSpeed={40} />
+			</Typography>
 
-			<div>
-				<h1 id='firstName'>Nicholas</h1>
-				<h1 id='lastName'>Brown</h1>
-			</div>
-		</header>
+			<Typography className={classes.subtitle} variant='h5'>
+				<Typed
+					strings={['Frontend Developer', 'Backend Developer']}
+					typeSpeed={40}
+					backSpeed={50}
+					loop
+				/>
+			</Typography>
+		</Box>
 	);
-}
+};
+
+export default Header;

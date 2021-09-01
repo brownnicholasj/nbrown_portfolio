@@ -61,6 +61,13 @@ switch a lot of it back to flexbox because it was simpler. I like the control
 the grid gives me so eventually I might go back, but there are more
 functions/features that might work better for me in the future.
 
+## Contributing
+
+A thanks to the following contributors to this project:
+
+- Mahmudul alam Email: expelmahmud@gmail.com
+- Nicholas Brown (brownnicholasj.dev@gmail.com)
+
 ## Questions
 
 If you have any questions about the repo, open an issue or contact me directly
