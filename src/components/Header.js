@@ -14,10 +14,12 @@ const useStyles = makeStyles((theme) => ({
 		margin: theme.spacing(1),
 	},
 	title: {
-		color: 'tomato',
+		color: 'white',
+		fontWeight: 700,
+		textShadow: '5px 5px 10px #3e2723',
 	},
 	subtitle: {
-		color: 'tan',
+		color: '#9e9e9e',
 		textTransform: 'uppercase',
 	},
 	typedContainer: {
@@ -45,7 +47,7 @@ const Header = () => {
 
 			<Typography className={classes.subtitle} variant='h5'>
 				<Typed
-					strings={['Frontend Developer', 'Backend Developer']}
+					strings={['Frontend Developer', 'Backend Developer', 'Product Owner']}
 					typeSpeed={40}
 					backSpeed={50}
 					loop
