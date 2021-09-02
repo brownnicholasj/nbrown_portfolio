@@ -109,19 +109,67 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const Resume = () => {
+const Experience = () => {
 	const classes = useStyles();
 	return (
 		<Box component='header' className={classes.mainContainer}>
 			<Typography variant='h4' align='center' className={classes.heading}>
 				Working Experience
 			</Typography>
+
 			<Box component='div' className={classes.timeLine}>
+				<Box component='div' className={classes.timeLineItem}>
+					<Typography
+						variant='h5'
+						align='center'
+						className={classes.subHeading}
+					>
+						Full Stack Development Certification
+					</Typography>
+					<Typography variant='body1' align='center' className={classes.body1}>
+						University of Kansas
+					</Typography>
+					<Typography
+						variant='subtitle1'
+						align='center'
+						className={classes.subtitle1}
+					>
+						Full stack development bootcamp that focused on a foundation of
+						HTML, CSS and JavaScript. Then expanded my skills necessary to
+						engineer a full stack web application, working with servers,
+						databases, and other back end technologies, and connecting them to
+						the front end. We then focused on optimizing web applications for
+						speed and efficiency with common practices in web development.
+					</Typography>
+				</Box>
+
+				<Box component='div' className={classes.timeLineItem}>
+					<Typography
+						variant='h5'
+						align='center'
+						className={classes.subHeading}
+					>
+						Product Manager
+					</Typography>
+					<Typography variant='body1' align='center' className={classes.body1}>
+						MercuryGate International
+					</Typography>
+					<Typography
+						variant='subtitle1'
+						align='center'
+						className={classes.subtitle1}
+					>
+						Create and manage user stories and acceptance criteria for new
+						development efforts across the product offering. Provide support and
+						decision making for development teams to achieve new functionality
+						and features for the product.
+					</Typography>
+				</Box>
 				<Typography
 					variant='h2'
 					className={`${classes.timeLineYear} ${classes.timeLineItem}`}
 				>
-					2008
+					2021
 				</Typography>
 				<Box component='div' className={classes.timeLineItem}>
 					<Typography
@@ -129,52 +177,28 @@ const Resume = () => {
 						align='center'
 						className={classes.subHeading}
 					>
-						Transportation Analyst
+						Professional Services Manager
 					</Typography>
 					<Typography variant='body1' align='center' className={classes.body1}>
-						Reckitt Benckiser
+						MercuryGate International
 					</Typography>
 					<Typography
 						variant='subtitle1'
 						align='center'
 						className={classes.subtitle1}
 					>
-						Operations and analytical support within the transportation
-						department managing $100+ million operations budget.
+						Manage team of optimization specialists to deliver creative
+						solutions within the TMS product suite focused around Optimization
+						and automation.
 					</Typography>
 				</Box>
 				<Typography
 					variant='h2'
 					className={`${classes.timeLineYear} ${classes.timeLineItem}`}
 				>
-					2011
+					2015
 				</Typography>
-				<Box component='div' className={classes.timeLineItem}>
-					<Typography
-						variant='h5'
-						align='center'
-						className={classes.subHeading}
-					>
-						Transportation Procurement Manager
-					</Typography>
-					<Typography variant='body1' align='center' className={classes.body1}>
-						Ralcorp (Purchased by ConAgra)
-					</Typography>
-					<Typography
-						variant='subtitle1'
-						align='center'
-						className={classes.subtitle1}
-					>
-						Transportation Management System super user that utilizes online
-						SaaS system to manage and execute transportation operations.
-					</Typography>
-				</Box>
-				<Typography
-					variant='h2'
-					className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-				>
-					2013
-				</Typography>
+
 				<Box component='div' className={classes.timeLineItem}>
 					<Typography
 						variant='h5'
@@ -200,85 +224,65 @@ const Resume = () => {
 					variant='h2'
 					className={`${classes.timeLineYear} ${classes.timeLineItem}`}
 				>
-					2015
+					2013
 				</Typography>
+
 				<Box component='div' className={classes.timeLineItem}>
 					<Typography
 						variant='h5'
 						align='center'
 						className={classes.subHeading}
 					>
-						Professional Services Manager
+						Transportation Procurement Manager
 					</Typography>
 					<Typography variant='body1' align='center' className={classes.body1}>
-						MercuryGate International
+						Ralcorp (Purchased by ConAgra)
 					</Typography>
 					<Typography
 						variant='subtitle1'
 						align='center'
 						className={classes.subtitle1}
 					>
-						Manage team of optimization specialists to deliver creative
-						solutions within the TMS product suite focused around Optimization
-						and automation.
+						Transportation Management System super user that utilizes online
+						SaaS system to manage and execute transportation operations.
 					</Typography>
 				</Box>
-
 				<Typography
 					variant='h2'
 					className={`${classes.timeLineYear} ${classes.timeLineItem}`}
 				>
-					2021
+					2011
 				</Typography>
+
 				<Box component='div' className={classes.timeLineItem}>
 					<Typography
 						variant='h5'
 						align='center'
 						className={classes.subHeading}
 					>
-						Product Manager
+						Transportation Analyst
 					</Typography>
 					<Typography variant='body1' align='center' className={classes.body1}>
-						MercuryGate International
+						Reckitt Benckiser
 					</Typography>
 					<Typography
 						variant='subtitle1'
 						align='center'
 						className={classes.subtitle1}
 					>
-						Create and manage user stories and acceptance criteria for new
-						development efforts across the product offering. Provide support and
-						decision making for development teams to achieve new functionality
-						and features for the product.
+						Operations and analytical support within the transportation
+						department managing $100+ million operations budget.
 					</Typography>
 				</Box>
-				<Box component='div' className={classes.timeLineItem}>
-					<Typography
-						variant='h5'
-						align='center'
-						className={classes.subHeading}
-					>
-						Full Stack Development Certification
-					</Typography>
-					<Typography variant='body1' align='center' className={classes.body1}>
-						University of Kansas
-					</Typography>
-					<Typography
-						variant='subtitle1'
-						align='center'
-						className={classes.subtitle1}
-					>
-						Full stack development bootcamp that focused on a foundation of
-						HTML, CSS and JavaScript. Then expanded my skills necessary to
-						engineer a full stack web application, working with servers,
-						databases, and other back end technologies, and connecting them to
-						the front end. We then focused on optimizing web applications for
-						speed and efficiency with common practices in web development.
-					</Typography>
-				</Box>
+				<Typography
+					variant='h2'
+					className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+				>
+					2008
+				</Typography>
 			</Box>
 		</Box>
 	);
 };
 
-export default Resume;
+export default Experience;
