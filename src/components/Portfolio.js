@@ -1,14 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import Carousel from 'react-material-ui-carousel';
+import Project from './Card';
 
 import project1 from '../images/html-css-javascript-lg.jpg';
 import project2 from '../images/html-css-javascript.jpg';
@@ -21,12 +14,92 @@ import insertimageVar from '../images/wcbackground.jpg';
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
 		background: '#011010',
-		height: '100%',
+		height: '100vh',
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center',
 	},
-	cardContainer: {
-		maxWidth: 345,
+	paperContainer: {
+		background: '#011010',
+		width: '90%',
 		margin: '3rem auto',
-		boxShadow: '1px 1px 5px #9e9e9e',
+		display: 'flex',
+		flexDirection: 'column',
+	},
+	image: {
+		width: theme.spacing(75),
+		height: theme.spacing(40),
+		margin: theme.spacing(1),
+		alignSelf: 'center',
+	},
+	root: {
+		position: 'relative',
+		overflow: 'hidden',
+	},
+	indicators: {
+		width: '100%',
+		marginTop: '10px',
+		textAlign: 'center',
+	},
+	indicator: {
+		'cursor': 'pointer',
+		'transition': '200ms',
+		'padding': 0,
+		'color': '#afafaf',
+		'&:hover': {
+			color: '#1f1f1f',
+		},
+		'&:active': {
+			color: '#1f1f1f',
+		},
+	},
+	indicatorIcon: {
+		fontSize: '15px',
+	},
+	active: {
+		color: '#494949',
+	},
+	buttonWrapper: {
+		'position': 'absolute',
+		'height': '100px',
+		'backgroundColor': 'transparent',
+		'top': 'calc(50% - 70px)',
+		'&:hover': {
+			'& $button': {
+				backgroundColor: 'black',
+				filter: 'brightness(120%)',
+				opacity: '0.4',
+			},
+		},
+	},
+	fullHeightHoverWrapper: {
+		height: '100%', // This is 100% - indicator height - indicator margin
+		top: '0',
+	},
+	buttonVisible: {
+		opacity: '1',
+	},
+	buttonHidden: {
+		opacity: '0',
+	},
+	button: {
+		'margin': '0 10px',
+		'position': 'relative',
+		'backgroundColor': '#494949',
+		'top': 'calc(50% - 20px) !important',
+		'color': 'white',
+		'fontSize': '30px',
+		'transition': '200ms',
+		'cursor': 'pointer',
+		'&:hover': {
+			opacity: '0.6 !important',
+		},
+	},
+	next: {
+		right: 0,
+	},
+	prev: {
+		left: 0,
 	},
 }));
 
@@ -352,42 +425,59 @@ const projects = [
 
 const Portfolio = () => {
 	const classes = useStyles();
+
 	return (
-		<Box component='div' className={classes.mainContainer}>
-			<Grid container justify='center'>
-				{/* Projects */}
-				{projects.map((project, i) => (
-					<Grid item xs={12} sm={8} md={4} key={i}>
-						<Card className={classes.cardContainer}>
-							<CardActionArea>
-								<CardMedia
-									component='img'
-									alt='Project 1'
-									height='140'
-									image={project.image}
-								/>
-								<CardContent>
-									<Typography variant='h5' gutterBottom>
-										{project.name}
-									</Typography>
-									<Typography variant='body2' color='textSecondary'>
-										{project.description}
-									</Typography>
-								</CardContent>
-							</CardActionArea>
-							<CardActions>
-								<Button size='small' color='primary'>
-									Share
-								</Button>
-								<Button size='small' color='primary'>
-									Live Demo
-								</Button>
-							</CardActions>
-						</Card>
-					</Grid>
-				))}
-			</Grid>
-		</Box>
+		<Carousel
+			className={classes.mainContainer}
+			next={(now, previous) =>
+				console.log(
+					`Next User Callback: Now displaying child${now}. Previously displayed child${previous}`
+				)
+			}
+			prev={(now, previous) =>
+				console.log(
+					`Prev User Callback: Now displaying child${now}. Previously displayed child${previous}`
+				)
+			}
+			onChange={(now, previous) =>
+				console.log(
+					`OnChange User Callback: Now displaying child${now}. Previously displayed child${previous}`
+				)
+			}
+		>
+			{/* Projects */}
+			{projects.map((project, i) => (
+				<Project key={i} project={project} />
+				// 	<Grid item xs={12} key={i}>
+				// 		<Card className={classes.cardContainer}>
+				// 			<CardActionArea>
+				// 				<CardMedia
+				// 					component='img'
+				// 					alt={project.name}
+				// 					height='140'
+				// 					image={project.image}
+				// 				/>
+				// 				<CardContent>
+				// 					<Typography variant='h5' gutterBottom>
+				// 						{project.name}
+				// 					</Typography>
+				// 					<Typography variant='body2' color='textSecondary'>
+				// 						{project.description}
+				// 					</Typography>
+				// 				</CardContent>
+				// 			</CardActionArea>
+				// 			<CardActions>
+				// 				<Button size='small' color='primary'>
+				// 					Share
+				// 				</Button>
+				// 				<Button size='small' color='primary'>
+				// 					Live Demo
+				// 				</Button>
+				// 			</CardActions>
+				// 		</Card>
+				// 	</Grid>
+			))}
+		</Carousel>
 	);
 };
 

@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import BannerExample from './components/Portfolio2';
 
 import './App.css';
 
