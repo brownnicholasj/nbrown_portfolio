@@ -10,6 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import Drawer from '@material-ui/core/Drawer';
 import GradeCard from './GradeCard';
 
+const drawerWidth = 240;
+
 const useStyles = makeStyles((theme) => ({
 	cardContainer: {
 		background: '#212121',
