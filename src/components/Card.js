@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
@@ -7,10 +7,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Drawer from '@material-ui/core/Drawer';
 import GradeCard from './GradeCard';
-
-const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
 	cardContainer: {
@@ -35,8 +32,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Project(props) {
-	const [open, setOpen] = useState(false);
-
 	const classes = useStyles();
 	return (
 		<Card className={classes.cardContainer}>
@@ -56,17 +51,16 @@ function Project(props) {
 					</Typography>
 				</CardContent>
 			</CardActionArea>
+
 			<CardActions>
-				<Button size='small' color='primary' onClick={() => setOpen(true)}>
+				<Button size='small' color='primary'>
 					Share
 				</Button>
 				<Button size='small' color='primary'>
 					Live Demo
 				</Button>
 			</CardActions>
-			<Drawer open={open} anchor='right' onClose={() => setOpen(false)}>
-				{GradeCard(props)}
-			</Drawer>
+			<GradeCard />
 		</Card>
 	);
 }
