@@ -12,10 +12,8 @@ import GradeCard from './GradeCard';
 const useStyles = makeStyles((theme) => ({
 	cardContainer: {
 		background: '#212121',
-		width: '50%',
+		width: 345,
 		margin: '3rem auto',
-		display: 'flex',
-		flexDirection: 'column',
 	},
 	image: {
 		width: theme.spacing(75),
@@ -60,7 +58,6 @@ function Project(props) {
 					Live Demo
 				</Button>
 			</CardActions>
-			<GradeCard />
 		</Card>
 	);
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Carousel from 'react-material-ui-carousel';
+import Box from '@material-ui/core/Box';
+import Grid from '@material-ui/core/Grid';
+
 import Project from './Card';
 
 import project1 from '../images/html-css-javascript-lg.jpg';
@@ -14,10 +16,7 @@ import insertimageVar from '../images/wcbackground.jpg';
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
 		background: '#011010',
-		height: '100vh',
-		display: 'flex',
-		flexDirection: 'column',
-		justifyContent: 'center',
+		height: '100%',
 	},
 	paperContainer: {
 		background: '#011010',
@@ -425,59 +424,44 @@ const projects = [
 
 const Portfolio = () => {
 	const classes = useStyles();
-
 	return (
-		<Carousel
-			className={classes.mainContainer}
-			next={(now, previous) =>
-				console.log(
-					`Next User Callback: Now displaying child${now}. Previously displayed child${previous}`
-				)
-			}
-			prev={(now, previous) =>
-				console.log(
-					`Prev User Callback: Now displaying child${now}. Previously displayed child${previous}`
-				)
-			}
-			onChange={(now, previous) =>
-				console.log(
-					`OnChange User Callback: Now displaying child${now}. Previously displayed child${previous}`
-				)
-			}
-		>
-			{/* Projects */}
-			{projects.map((project, i) => (
-				<Project key={i} project={project} />
-				// 	<Grid item xs={12} key={i}>
-				// 		<Card className={classes.cardContainer}>
-				// 			<CardActionArea>
-				// 				<CardMedia
-				// 					component='img'
-				// 					alt={project.name}
-				// 					height='140'
-				// 					image={project.image}
-				// 				/>
-				// 				<CardContent>
-				// 					<Typography variant='h5' gutterBottom>
-				// 						{project.name}
-				// 					</Typography>
-				// 					<Typography variant='body2' color='textSecondary'>
-				// 						{project.description}
-				// 					</Typography>
-				// 				</CardContent>
-				// 			</CardActionArea>
-				// 			<CardActions>
-				// 				<Button size='small' color='primary'>
-				// 					Share
-				// 				</Button>
-				// 				<Button size='small' color='primary'>
-				// 					Live Demo
-				// 				</Button>
-				// 			</CardActions>
-				// 		</Card>
-				// 	</Grid>
-			))}
-		</Carousel>
+		<Box component='div' className={classes.mainContainer}>
+			<Grid container justify='center'>
+				{/*Projects */}
+				{projects.map((project, i) => (
+					<Project key={i} project={project} />
+
+					// <Grid item xs={12} sm={8} md={4} key={i}>
+					//   <Card className={classes.cardContainer}>
+					// 	<CardActionArea>
+					// 	  <CardMedia
+					// 		component="img"
+					// 		alt="Project 1"
+					// 		height="140"
+					// 		image={project.image}
+					// 	  />
+					// 	  <CardContent>
+					// 		<Typography variant="h5" gutterBottom>
+					// 		  {project.name}
+					// 		</Typography>
+					// 		<Typography variant="body2" color="textSecondary">
+					// 		  {project.description}
+					// 		</Typography>
+					// 	  </CardContent>
+					// 	</CardActionArea>
+					// 	<CardActions>
+					// 	  <Button size="small" color="primary">
+					// 		Share
+					// 	  </Button>
+					// 	  <Button size="small" color="primary">
+					// 		Live Demo
+					// 	  </Button>
+					// 	</CardActions>
+					//   </Card>
+					// </Grid>	*/}
+				))}
+			</Grid>
+		</Box>
 	);
 };
 
