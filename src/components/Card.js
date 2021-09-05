@@ -12,13 +12,14 @@ import GradeCard from './GradeCard';
 const useStyles = makeStyles((theme) => ({
 	cardContainer: {
 		background: '#212121',
-		width: 345,
-		margin: '3rem auto',
+		maxWidth: '20%',
+		minWidth: 345,
+		margin: theme.spacing(10),
 	},
 	image: {
 		width: theme.spacing(75),
 		height: theme.spacing(40),
-		margin: theme.spacing(1),
+		margin: theme.spacing(0),
 		alignSelf: 'center',
 	},
 	header: {
@@ -35,6 +36,7 @@ function Project(props) {
 		<Card className={classes.cardContainer}>
 			<CardActionArea>
 				<CardMedia
+					className={classes.image}
 					component='img'
 					alt={props.project.name}
 					height='240'
@@ -51,10 +53,18 @@ function Project(props) {
 			</CardActionArea>
 
 			<CardActions>
-				<Button size='small' color='primary'>
-					Share
+				<Button
+					size='small'
+					color='primary'
+					onClick={() => window.open(`${props.project.git}`, '_blank')}
+				>
+					Git Repo
 				</Button>
-				<Button size='small' color='primary'>
+				<Button
+					size='small'
+					color='primary'
+					onClick={() => window.open(`${props.project.url}`, '_blank')}
+				>
 					Live Demo
 				</Button>
 			</CardActions>
