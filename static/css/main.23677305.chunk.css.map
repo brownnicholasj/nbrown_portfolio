@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,KACC,uFAA0D,CAI1D,qBACD","file":"main.23677305.chunk.css","sourcesContent":["body {\n\tbackground: url(bgimage.jpg) no-repeat center center fixed;\n\t-webkit-background-size: cover;\n\t-moz-background-size: cover;\n\t-o-background-size: cover;\n\tbackground-size: cover;\n}\n"]}
