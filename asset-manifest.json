@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/nbrown_portfolio/static/css/main.23677305.chunk.css",
-    "main.js": "/nbrown_portfolio/static/js/main.8432022b.chunk.js",
-    "main.js.map": "/nbrown_portfolio/static/js/main.8432022b.chunk.js.map",
+    "main.js": "/nbrown_portfolio/static/js/main.aa993c88.chunk.js",
+    "main.js.map": "/nbrown_portfolio/static/js/main.aa993c88.chunk.js.map",
     "runtime-main.js": "/nbrown_portfolio/static/js/runtime-main.cba8d10d.js",
     "runtime-main.js.map": "/nbrown_portfolio/static/js/runtime-main.cba8d10d.js.map",
     "static/js/2.eb54aded.chunk.js": "/nbrown_portfolio/static/js/2.eb54aded.chunk.js",
     "static/js/2.eb54aded.chunk.js.map": "/nbrown_portfolio/static/js/2.eb54aded.chunk.js.map",
     "index.html": "/nbrown_portfolio/index.html",
-    "precache-manifest.c8129aafb8483243678aba920cf7fb62.js": "/nbrown_portfolio/precache-manifest.c8129aafb8483243678aba920cf7fb62.js",
+    "precache-manifest.c0743de360a9fe404acfd718e0d72d72.js": "/nbrown_portfolio/precache-manifest.c0743de360a9fe404acfd718e0d72d72.js",
     "service-worker.js": "/nbrown_portfolio/service-worker.js",
     "static/css/main.23677305.chunk.css.map": "/nbrown_portfolio/static/css/main.23677305.chunk.css.map",
     "static/js/2.eb54aded.chunk.js.LICENSE.txt": "/nbrown_portfolio/static/js/2.eb54aded.chunk.js.LICENSE.txt",
@@ -39,6 +39,6 @@
     "static/js/runtime-main.cba8d10d.js",
     "static/js/2.eb54aded.chunk.js",
     "static/css/main.23677305.chunk.css",
-    "static/js/main.8432022b.chunk.js"
+    "static/js/main.aa993c88.chunk.js"
   ]
 }
