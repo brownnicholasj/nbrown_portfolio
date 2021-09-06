@@ -23,8 +23,8 @@ import notetaker from '../images/notetaker.jpg';
 import ems from '../images/ems.jpg';
 import ecommbe from '../images/ecommbe.jpg';
 import regex from '../images/regex.jpg';
-import budget from '../images/budget.jpg';
 import password from '../images/password.jpg';
+import budget from '../images/budget.jpg';
 
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
