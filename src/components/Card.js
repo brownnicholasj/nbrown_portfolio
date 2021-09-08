@@ -11,6 +11,16 @@ import GradeCard from './GradeCard';
 
 const useStyles = makeStyles((theme) => ({
 	cardContainer: {
+		'background': '#212121',
+		'maxWidth': '20%',
+		'minWidth': 345,
+		'margin': theme.spacing(10),
+		'&:hover': {
+			borderRadius: 3,
+			boxShadow: '0 0 15px 8px #fff' /* inner white */,
+		},
+	},
+	cardContainerisHover: {
 		background: '#212121',
 		maxWidth: '20%',
 		minWidth: 345,
@@ -28,10 +38,28 @@ const useStyles = makeStyles((theme) => ({
 	paragraph: {
 		color: 'tan',
 	},
+	buttonContainer: {
+		display: 'flex',
+		justifyContent: 'space-between',
+	},
+	button: {
+		'background': 'linear-gradient(45deg, rgb(56,56,56) 30%, rgb(0,0,0) 90%)',
+		'border': 0,
+		'borderRadius': 3,
+		'boxShadow': '0 3px 5px 2px rgba(255, 105, 135, .3)',
+		'color': 'white',
+		'height': 48,
+		'padding': '0 30px',
+		'&:hover': {
+			borderRadius: 3,
+			boxShadow: '0 0 5px 2px #fff' /* inner white */,
+		},
+	},
 }));
 
 function Project(props) {
 	const classes = useStyles();
+
 	return (
 		<Card className={classes.cardContainer}>
 			<CardActionArea>
@@ -52,17 +80,17 @@ function Project(props) {
 				</CardContent>
 			</CardActionArea>
 
-			<CardActions>
+			<CardActions className={classes.buttonContainer}>
 				<Button
 					size='small'
-					color='primary'
+					className={classes.button}
 					onClick={() => window.open(`${props.project.git}`, '_blank')}
 				>
 					Git Repo
 				</Button>
 				<Button
 					size='small'
-					color='primary'
+					className={classes.button}
 					onClick={() => window.open(`${props.project.url}`, '_blank')}
 				>
 					Live Demo
