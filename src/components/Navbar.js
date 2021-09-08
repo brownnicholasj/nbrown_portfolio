@@ -50,14 +50,22 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const menuItems = [
-	{ listIcon: <Home />, listText: 'Home', listPath: '/' },
+	{ listIcon: <Home />, listText: 'Home', listPath: '/nbrown_portfolio' },
 	{
 		listIcon: <AssignmentInd />,
 		listText: 'Experience',
-		listPath: '/experience',
+		listPath: '/nbrown_portfolio/experience',
 	},
-	{ listIcon: <Apps />, listText: 'Portfolio', listPath: '/portfolio' },
-	{ listIcon: <ContactMail />, listText: 'Contact', listPath: '/contact' },
+	{
+		listIcon: <Apps />,
+		listText: 'Portfolio',
+		listPath: '/nbrown_portfolio/portfolio',
+	},
+	{
+		listIcon: <ContactMail />,
+		listText: 'Contact',
+		listPath: '/nbrown_portfolio/contact',
+	},
 ];
 
 const Navbar = () => {

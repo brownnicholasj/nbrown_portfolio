@@ -15,11 +15,15 @@ function App() {
 			<CssBaseline />
 			<Navbar />
 			<Switch>
-				<Route exact path='/' component={Home} />
+				{/* <Route exact path='/' component={Home} /> */}
 				<Route exact path='/nbrown_portfolio' component={Home} />
-				<Route exact path='/experience' component={Experience} />
-				<Route exact path='/portfolio' component={Portfolio} />
-				<Route exact path='/contact' component={Contact} />
+				<Route
+					exact
+					path='/nbrown_portfolio/experience'
+					component={Experience}
+				/>
+				<Route exact path='/nbrown_portfolio/portfolio' component={Portfolio} />
+				<Route exact path='/nbrown_portfolio/contact' component={Contact} />
 			</Switch>
 		</React.Fragment>
 	);
