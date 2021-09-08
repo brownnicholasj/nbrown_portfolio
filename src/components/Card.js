@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
 	buttonContainer: {
 		display: 'flex',
 		justifyContent: 'space-between',
+		alignSelf: 'flex-end',
 	},
 	button: {
 		'background': 'linear-gradient(45deg, rgb(56,56,56) 30%, rgb(0,0,0) 90%)',

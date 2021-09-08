@@ -38,7 +38,7 @@ const projects = [
 		name: 'Project 1: Jeopardy',
 		grade: 'A',
 		note: '',
-		description: `insert description notes here`,
+		description: `Recreated the game of Jeopardy utilizing RESTapi that retrieves questions and answers from over 30 years of actual questions used in the TV show.`,
 		image: jeopardy,
 		git: 'https://github.com/brownnicholasj/jeopardy-game',
 		url: 'https://btdubbzzz.github.io/jeopardy-game/',
@@ -47,7 +47,7 @@ const projects = [
 		name: 'Project 2: the event planning',
 		grade: 'A',
 		note: '',
-		description: `insert description notes here`,
+		description: `MERN Stack development of creating a location for users to plan/organize events.  Utilizes Handlebars.js to handle front end components.`,
 		image: eventplanning,
 		git: 'https://github.com/brownnicholasj/the-event-planning',
 		url: 'https://the-event-planning.herokuapp.com/',
@@ -56,7 +56,7 @@ const projects = [
 		name: 'Project 3: HomeFax',
 		grade: 'A+',
 		note: '',
-		description: `insert description notes here`,
+		description: `HomeFax is a MERN + React.js app that allows users to store home maintenance and project information to keep and retrieve over the life of the home. Allows users to transfer homes to new users.`,
 		image: homefax,
 		git: 'https://github.com/brownnicholasj/homeFax',
 		url: 'https://homefax.herokuapp.com/',
@@ -263,35 +263,6 @@ const Portfolio = () => {
 				{/*Projects */}
 				{projects.map((project, i) => (
 					<Project key={i} project={project} />
-
-					// <Grid item xs={12} sm={8} md={4} key={i}>
-					//   <Card className={classes.cardContainer}>
-					// 	<CardActionArea>
-					// 	  <CardMedia
-					// 		component="img"
-					// 		alt="Project 1"
-					// 		height="140"
-					// 		image={project.image}
-					// 	  />
-					// 	  <CardContent>
-					// 		<Typography variant="h5" gutterBottom>
-					// 		  {project.name}
-					// 		</Typography>
-					// 		<Typography variant="body2" color="textSecondary">
-					// 		  {project.description}
-					// 		</Typography>
-					// 	  </CardContent>
-					// 	</CardActionArea>
-					// 	<CardActions>
-					// 	  <Button size="small" color="primary">
-					// 		Share
-					// 	  </Button>
-					// 	  <Button size="small" color="primary">
-					// 		Live Demo
-					// 	  </Button>
-					// 	</CardActions>
-					//   </Card>
-					// </Grid>	*/}
 				))}
 			</Grid>
 		</Box>
